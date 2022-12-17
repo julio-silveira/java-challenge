@@ -9,7 +9,7 @@ public class FirstChallenge {
   }
 
   private void addToEven(Integer number) {
-    this.evenNumbers.add(number)
+    this.evenNumbers.add(number);
   }
 
   public void sortNumbers(int[] numbers ){
