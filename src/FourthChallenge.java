@@ -1,6 +1,6 @@
 public class FourthChallenge {
-  private String firstHalf;
-  private String secondHalf;
+  private String firstHalf = "";
+  private String secondHalf = "";
 
   public void setFirstHalf(String firstHalf) {
     this.firstHalf = firstHalf;
@@ -20,8 +20,23 @@ public class FourthChallenge {
 
 
   public void fix(String[] data){
-    int phrasesNumber = Integer.parseInt(data[0]);
-    
+    int phrasesQuantity = Integer.parseInt(data[0]);
+    for(int i = 1; i<= phrasesQuantity; i += 1 ){
+      setFirstHalf("");
+      setSecondHalf("");
+      int halfStringSize = data[i].length()/2;
+
+      String rawFirstHalf = data[i].substring(0, halfStringSize);
+      String rawSecondHalf = data[i].substring(halfStringSize);
+
+      for( int j = (halfStringSize -1); j >= 0 ; j-= 1){
+        setFirstHalf(getFirstHalf() + rawFirstHalf.charAt(j) );
+      }
+      for( int j = (halfStringSize -1); j >= 0 ; j-= 1){
+        setSecondHalf(getSecondHalf() + rawSecondHalf.charAt(j) );
+      }
+      System.out.println(getFirstHalf() + getSecondHalf());
+    }
   } 
 
 }
