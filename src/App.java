@@ -8,10 +8,16 @@ public class App {
         // double value = 576.74f;
         // exchange.toFiat(value);
 
-        ThirdChallenge count = new ThirdChallenge();
-        int k = 2;
-        int[] n = {1,5,3,4,2};
+        // ThirdChallenge count = new ThirdChallenge();
+        // int k = 2;
+        // int[] n = {1,5,3,4,2};
 
-        count.counter(n, k);
+        // count.counter(n, k);
+
+        String[] data ={"5", "I ENIL SIHTHSIREBBIG S", "LEVELKAYAK", "H YPPAHSYADILO", "ABCDEFGHIJKLMNOPQRSTUVWXYZ", "VOD OWT SNEH HCNERF EGDIRTRAP A DNA SE" };
+        FourthChallenge bug = new FourthChallenge();
+        bug.fix(data);
+
+
     }
 }
