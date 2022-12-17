@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class FirstChallenge {
@@ -21,7 +22,11 @@ public class FirstChallenge {
       } else {
         this.addToOdds(numbers[i]);
       }
-    System.out.println(oddNumbers);
-    System.out.println(evenNumbers);
-  }}
+ 
+  }
+  Collections.sort(oddNumbers, Collections.reverseOrder());
+  Collections.sort(evenNumbers);
+  System.out.println(oddNumbers);
+  System.out.println(evenNumbers);
+}
 }
