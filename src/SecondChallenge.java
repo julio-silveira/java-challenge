@@ -1,6 +1,6 @@
 import java.util.Locale;
 
-public class secondChallenge {
+public class SecondChallenge {
   private double currentValue;
   private double[] bills = { 100.00f,50.00f, 20.00f, 10.00f ,5.00f, 2.00f };
   private double[] coins = {1.00f, 0.50f, 0.25f, 0.10f, 0.05f, 0.01f };
