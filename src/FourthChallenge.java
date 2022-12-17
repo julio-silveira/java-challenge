@@ -18,12 +18,16 @@ public class FourthChallenge {
     return secondHalf;
   }
 
+  private void resetWords() {
+      setFirstHalf("");
+      setSecondHalf("");
+  }
+  
 
   public void fix(String[] data){
     int phrasesQuantity = Integer.parseInt(data[0]);
     for(int i = 1; i<= phrasesQuantity; i += 1 ){
-      setFirstHalf("");
-      setSecondHalf("");
+      resetWords();
       int halfStringSize = data[i].length()/2;
 
       String rawFirstHalf = data[i].substring(0, halfStringSize);
