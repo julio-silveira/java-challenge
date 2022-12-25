@@ -44,3 +44,8 @@ I ENIL SIHTHSIREBBIG S
 Da mesma forma, a linha " MANGOS " está sendo impressa incorretamente como "NAM SOG". Sua tarefa é desembaralhar (decifrar) a string a partir da forma como ela foi impressa para a sua forma original. Você pode assumir que cada linha conterá um número par de caracteres.
 
 ![alt text](./img/fourth.png)
+
+
+## Tecnologias Utilizadas
+
+- Java
